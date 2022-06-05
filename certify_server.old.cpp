@@ -18,7 +18,7 @@ struct DataGram
 {
     short pNumber;
     int datalen;
-    char data[1024];
+    char data[568];
 };
 
 int main(void)

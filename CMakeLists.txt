@@ -12,8 +12,8 @@ file(GLOB SRC_FILES
 
 add_executable(TOTPclient OTPclient.cpp src/TOTP.cpp src/sm2/sm3.c)#totp客户端成品
 
-add_executable(certify-client certify_client.cpp ${SRC_FILES})
-add_executable(certify-server certify_server.cpp ${SRC_FILES})
+add_executable(certify-client certify_client.old.cpp ${SRC_FILES})
+add_executable(certify-server certify_server.old.cpp ${SRC_FILES})
 
 target_link_libraries(certify-client miracl)
 target_link_libraries(certify-server miracl)
